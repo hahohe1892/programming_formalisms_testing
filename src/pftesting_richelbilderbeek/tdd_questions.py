@@ -100,3 +100,8 @@ This function determines if a number is a prime number.
 -   Try to be **exemplary**
 """
 
+
+def is_prime(x):
+
+    test = x
+    

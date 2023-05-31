@@ -2,7 +2,7 @@
 import unittest
 
 from src.pftesting_richelbilderbeek.tdd_questions import (
-    is_zero,
+    is_zero, is_prime,
 )
 
 
@@ -19,3 +19,9 @@ class TestEasySolutions(unittest.TestCase):
         self.assertRaises(TypeError, is_zero, {1, 2})
         self.assertRaises(TypeError, is_zero, "I am a string")
 
+
+    def test_is_prime(self):
+        """Test 'is_zero'."""
+        self.assertIsNotNone(is_prime.__doc__)
+        self.assertRaises(TypeError, is_prime, {1, 2})
+        self.assertRaises(TypeError, is_prime, "I am a string")
